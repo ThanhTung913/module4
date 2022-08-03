@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class GreetingController {
     @GetMapping("/greeting")
     public String greeting(ModelMap model) {
-        model.addAttribute("name", "Thanh Tùng Nè Các bạn");
+        String name = "Xin chào các bạn";
+        model.addAttribute("name",name);
         return "index";
     }
 }
